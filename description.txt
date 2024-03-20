@@ -1,0 +1,31 @@
+Agents:
+    -main agent
+    -small agent1
+    -small agent2
+
+State:
+    - for the small agents, the deck of the cards, with the winning = 0
+    - for the main agent, the life is at maximum
+
+Environment:
+    - game of cards combined with the life of the main agent
+
+Action:
+    -send card to the  main agent and receive the status of the card.
+
+Perception:
+    - if a small agent card is smaller than the great agent card, win else loose
+    - if the main agent is left with life 0, the agent is dead and the small agents win.
+
+Goal:
+    - to win as many hands as possible and to beat the main agent.
+
+Problem definition:
+    In this project, I developed a game a cards, where the higher card wins and deals damage to the main agent.
+
+MAS Specification:
+    - bussiness logic
+    
+Agent's role:
+    -Main agent reprezents the agent that must be beaten.
+    -Smaller agents reprezents the  agents who are trying to beat the Main agent.
